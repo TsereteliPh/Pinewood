@@ -13,9 +13,91 @@
     <!-- здесь будет хэдер -->
     
     <main class="main">
-        
+        <h1 class="page__caption">Контактные данные</h1>
+
+        <section class="contacts">
+            <div class="contacts__wrapper">
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <img src="img/icon-big-phone.svg" alt="Иконка телефона">
+
+                        <div class="contacts__info">
+                            <h3 class="contacts__caption">Позвоните нам</h3>
+
+                            <p class="contacts__text">Есть вопросы? Мы поможем!</p>
+
+                            <a href="tel:+77777777777" class="contacts__link">+7 777 777 77 77</a>
+                        </div>
+                    </li>
+
+                    <li class="contacts__item">
+                        <img src="img/icon-big-mail.svg" alt="Иконка почты">
+
+                        <div class="contacts__info">
+                            <h3 class="contacts__caption">Напишите нам</h3>
+
+                            <p class="contacts__text">
+                                Идеи? Предложения?<br>
+                                Мы открыты для любых<br>
+                                вопросов!
+                            </p>
+
+                            <a href="mailto:info@pinewoodhomes.ru" class="contacts__link">info@pinewoodhomes.ru</a>
+                        </div>
+                    </li>
+
+                    <li class="contacts__item">
+                        <img src="img/icon-big-call.svg" alt="Иконка вызова">
+
+                        <div class="contacts__info">
+                            <h3 class="contacts__caption">Закажите звонок</h3>
+
+                            <p class="contacts__text">
+                                Мы перезвоним Вам<br>
+                                в ближайшее время!
+                            </p>
+
+                            <button class="secondary-button contacts__button" type="button">Заказать звонок</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="map">
+            <p class="map__adress">
+                Владимирская обл. г. Александров<br>
+                ул. Ленина 13/7 БЦ Свечка, оф. 211
+            </p>
+
+            <div id="map" class="map__wrapper">
+                <!-- место для карты -->
+            </div>
+        </section>
     </main>
 
     <!-- здесь будет футер -->
+
+    <section class="modal modal--call">
+        <h2 class="modal__caption">
+            Мы перезвоним Вам<br>
+            в течении 15 минут
+        </h2>
+
+        <form action="#" class="modal__form">
+            <input type="text" class="input modal__input" name="modal-name" placeholder="Ваше имя" required>
+
+            <input type="tel" class="input modal__input" name="modal-phone" placeholder="Ваш телефон" required>
+
+            <button class="primary-button modal__button">Заказать звонок</button>
+        </form>
+
+        <button class="modal__cross">
+            <span class="visually-hidden">Закрыть окно</span>
+            <svg>
+                <use xlink:href="img/icons.svg#icon-cross"></use>
+            </svg>
+        </button>
+    </section>
 </body>
 </html>

@@ -45,17 +45,17 @@
                         <span class="visually-hidden">Открыть меню</span>
                         <svg class="hui"><use xlink:href="img/icons.svg#icon-burger"></use></svg>
                     </button>
-                    
-                    <button class="menu-panel__cross" type="button">
-                        <span class="visually-hidden">Закрыть меню</span>
-                        <svg><use xlink:href="img/icons.svg#icon-cross"></use></svg>
-                    </button>
                 </div>
 
                 <a href="tel:+77777777777" class="header__phone-link">+7 777 777 77 77</a>
             </div>
 
-            <div class="header__popup"></div>
+            <div class="header__popup">
+                <button class="menu-panel__cross" type="button">
+                    <span class="visually-hidden">Закрыть меню</span>
+                    <svg><use xlink:href="img/icons.svg#icon-cross"></use></svg>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -167,7 +167,7 @@
 
                 <div class="projects__panel">
                     <div class="projects__left-btn"></div>
-                    <a class="secondary__button projects__all-btn">Смотреть все проекты</a>
+                    <a class="secondary-button projects__all-btn">Смотреть все проекты</a>
                     <div class="projects__right-btn"></div>
                 </div>
             </div>
@@ -210,7 +210,7 @@
 
                 <div class="services__panel">
                     <div class="services__left-btn"></div>
-                    <a class="secondary__button services__all-btn">Смотреть все услуги</a>
+                    <a class="secondary-button services__all-btn">Смотреть все услуги</a>
                     <div class="services__right-btn"></div>
                 </div>
             </div>
@@ -272,5 +272,27 @@
             </div>
         </div>
     </footer>
+
+    <section class="modal modal--call">
+        <h2 class="modal__caption">
+            Мы перезвоним Вам<br>
+            в течении 15 минут
+        </h2>
+
+        <form action="#" class="modal__form">
+            <input type="text" class="input modal__input" name="modal-name" placeholder="Ваше имя" required>
+
+            <input type="tel" class="input modal__input" name="modal-phone" placeholder="Ваш телефон" required>
+
+            <button class="primary-button modal__button">Заказать звонок</button>
+        </form>
+
+        <button class="modal__cross">
+            <span class="visually-hidden">Закрыть окно</span>
+            <svg>
+                <use xlink:href="img/icons.svg#icon-cross"></use>
+            </svg>
+        </button>
+    </section>
 </body>
 </html>

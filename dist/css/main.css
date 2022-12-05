@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.woff2), url(../fonts/Roboto-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Bold.woff2), url(../fonts/Roboto-Bold.woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol,
+dl {
+  list-style: none;
+}
+.page__body {
+  max-width: 100%;
+  min-width: 320px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #424242;
+  background-color: #EDE8E2;
+}
+.container {
+  padding: 0 17px;
+  max-width: 1740px;
+}
+@media (min-width: 744px) {
+  .container {
+    padding: 0 61px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    padding: 0 117px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.main-caption {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.main-caption span {
+  color: #8B9D83;
+}
+@media (min-width: 1400px) {
+  .main-caption {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+@media (min-width: 1920px) {
+  .main-caption {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+.primary-button {
+  display: block;
+  min-width: 150px;
+  padding: 17px 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #8B9D83;
+  border: none;
+  border-radius: 58px;
+  cursor: pointer;
+}
+.primary-button:hover {
+  background-color: #6D8E5E;
+}
+.primary-button:active {
+  background-color: #8B9D83;
+}
+.primary-button:disabled {
+  background-color: #dcdcdc;
+  cursor: default;
+}
+.secondary-button {
+  display: block;
+  min-width: 150px;
+  padding: 15px 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #686656;
+  background-color: none;
+  border: 2px solid #8B9D83;
+  border-radius: 55px;
+  cursor: pointer;
+}
+.secondary-button:hover {
+  border-color: #6D8E5E;
+}
+.secondary-button:active {
+  border-color: #8B9D83;
+}
+.secondary-button:disabled {
+  border-color: #dcdcdc;
+  cursor: default;
+}
+.input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 45px;
+  padding: 15px;
+  font-style: inherit;
+  color: #515151;
+  border: 2px solid #D5D5D5;
+  border-radius: 17px;
+}
+.input:hover,
+.input:focus {
+  border-color: #6D8E5E;
+}
+.input:focus-visible {
+  outline: none;
+}
