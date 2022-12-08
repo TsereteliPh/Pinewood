@@ -63,7 +63,7 @@ function scripts() {
 function imageCompress() {
     return gulp.src(paths.img.src)
     .pipe(imagemin([
-        imagemin.mozjpeg({quality: 85}),
+        imagemin.mozjpeg({quality: 90}),
         imagemin.optipng({optimizationLevel: 4}),
         imagemin.svgo({
             plugins: [{removeViewBox: false}]

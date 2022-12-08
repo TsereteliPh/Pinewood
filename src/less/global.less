@@ -26,6 +26,10 @@ ul, ol, dl {
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .page__body {
     max-width: 100%;
     min-width: 320px;
@@ -37,11 +41,25 @@ ul, ol, dl {
     color: #424242;
 
     background-color: #EDE8E2;
+    overflow-x: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container {
-    padding: 0 17px;
     max-width: 1740px;
+    padding: 0 17px;
 
     @media (min-width: @tablet-width) {
         padding: 0 61px;
@@ -57,7 +75,7 @@ ul, ol, dl {
     }
 }
 
-.main-caption {
+.main__caption {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
@@ -77,9 +95,50 @@ ul, ol, dl {
     }
 }
 
+.foreword {
+    width: 283px;
+
+    & h2 {
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+
+        & h2 {
+            margin: 0;
+        }
+
+        & p {
+            width: 80%;
+        }
+    }
+
+    @media (min-width: @laptop-width) {
+        gap: 200px;
+
+        & p {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+
+    @media (min-width: @desktop-width) {
+        gap: 290px;
+
+        & p {
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+}
+
 .primary-button {
     display: block;
-    min-width: 150px;
+    width: 150px;
     padding: 17px 0;
 
     font-size: 14px;
@@ -102,6 +161,24 @@ ul, ol, dl {
     &:disabled {
         background-color: #dcdcdc;
         cursor: default;
+    }
+
+    &--arrow {
+        position: relative;
+
+        padding-right: 35px;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: calc(50% - 7.5px);
+            right: 18px;
+            width: 17px;
+            height: 15px;
+
+            background: url('../img/icon-arrow-right.svg') no-repeat 50%;
+        }
     }
 }
 

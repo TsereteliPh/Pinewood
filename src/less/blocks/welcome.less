@@ -1,0 +1,207 @@
+.welcome {
+    position: relative;
+    margin-bottom: 72px;
+
+    @media (min-width: @tablet-width) {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 0 auto;
+        margin-bottom: 130px;
+
+        &::before {
+            content: "";
+    
+            position: absolute;
+            top: 0;
+            left: 365px;
+    
+            width: 308px;
+            height: 296px;
+    
+            background: url('../img/bg-wood.svg') no-repeat center;
+    
+            z-index: -1;
+        }
+    }
+
+    @media (min-width: @laptop-width) {
+        gap: 62px;
+        margin-bottom: 200px;
+
+        &::before {
+            width: 503px;
+            height: 483px;
+
+            top: 80px;
+            left: 552px;
+        }
+    }
+
+    @media (min-width: @desktop-width) {
+        gap: 220px;
+        margin-bottom: 220px;
+
+        &::before {
+            width: 718px;
+            height: 689px;
+
+            top: 113px;
+            left: 725px;
+        }
+    }
+}
+
+.welcome__img {
+    display: flex;
+    width: 100%;
+    max-width: 430px;
+    height: 252px;
+    margin: 0 auto 20px;
+
+    border: 3px solid #8B9D83;
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    & img {
+        object-fit: cover;
+    }
+
+    @media (min-width: @tablet-width) {
+        max-width: 590px;
+        height: 331px;
+        margin: 0;
+
+        order: 2;
+    }
+
+    @media (min-width: @laptop-width) {
+        min-width: 557px;
+        max-width: 775px;
+        height: 435px;
+    }
+
+    @media (min-width: @desktop-width) {
+        max-width: 794px;
+        height: 620px;
+    }
+}
+
+.welcome__info {
+    @media (min-width: @tablet-width) {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    @media (min-width: @laptop-width) {
+        width: 100%;
+        max-width: 453px;
+    }
+
+    @media (min-width: @desktop-width) {
+        max-width: 604px;
+    }
+}
+
+.welcome__caption {
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+        margin-bottom: 32px;
+
+        font-size: 32px;
+        line-height: 37px;
+    }
+
+    @media (min-width: @laptop-width) {
+        font-size: 48px;
+        line-height: 56px; 
+    }
+
+    @media (min-width: @desktop-width) {
+        font-size: 64px;
+        line-height: 75px;
+    }
+}
+
+.welcome__text {
+    margin-bottom: 60px;
+
+    font-size: 18px;
+    line-height: 21px;
+
+    @media (min-width: @tablet-width) {
+        margin-bottom: 75px;
+    }
+
+    @media (min-width: @laptop-width) {
+        font-size: 24px;
+        line-height: 28px; 
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-bottom: 134px;
+
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+.welcome__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+
+    @media (min-width: @laptop-width) {
+        width: 420px;
+        gap: 30px;
+    }
+}
+
+.welcome__price-btn {
+    width: 235px;
+    height: 50px;
+
+    font-size: 12px;
+    text-transform: uppercase;
+
+    border-radius: 42px;
+
+    @media (min-width: @laptop-width) {
+        width: 323px;
+        height: 81px;
+
+        font-size: 16px;
+
+        border-radius: 78px;
+    }
+}
+
+.welcome__inst-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    & svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    @media (min-width: @laptop-width) {
+        width: 81px;
+        height: 81px;
+
+        & svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
