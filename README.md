@@ -1,1 +1,1 @@
-[Демо проекта](https://tsereteliph.github.io/Grand-Theatre/)
+[Демо проекта](https://tsereteliph.github.io/Pinewood/)
