@@ -1185,8 +1185,8 @@ img {
 }
 .quiz {
   position: relative;
-  margin-bottom: 40px;
-  overflow-x: hidden;
+  padding-bottom: 40px;
+  overflow: hidden;
 }
 .quiz::before {
   content: "";
@@ -1202,11 +1202,11 @@ img {
 }
 @media (min-width: 744px) {
   .quiz {
-    margin-bottom: 105px;
+    padding-bottom: 105px;
   }
   .quiz::before {
-    top: 77%;
-    left: -5%;
+    top: 70%;
+    left: -10%;
     width: 474px;
     height: 456px;
     transform: rotate(225deg);
@@ -1214,7 +1214,7 @@ img {
   .quiz::after {
     content: "";
     position: absolute;
-    top: 4%;
+    top: 3%;
     right: -3%;
     width: 340px;
     height: 330px;
@@ -1226,17 +1226,17 @@ img {
 }
 @media (min-width: 1400px) {
   .quiz {
-    margin-bottom: 155px;
+    padding-bottom: 155px;
   }
   .quiz::before {
-    top: 68%;
-    left: 0;
+    top: 58%;
+    left: -3%;
     width: 452px;
     height: 426px;
     transform: rotate(-90deg);
   }
   .quiz::after {
-    top: 18%;
+    top: 13%;
     width: 326px;
     height: 307px;
     transform: rotate(250deg);
@@ -1244,18 +1244,18 @@ img {
 }
 @media (min-width: 1920px) {
   .quiz {
-    margin-bottom: 115px;
+    padding-bottom: 115px;
   }
   .quiz::before {
-    top: 80%;
-    left: 8%;
+    top: 73%;
+    left: 6%;
     width: 356px;
     height: 341px;
-    transform: rotate(-70deg);
+    transform: rotate(-45deg);
   }
   .quiz::after {
-    top: 8%;
-    right: -10%;
+    top: 2%;
+    right: 0;
     width: 481px;
     height: 453px;
     transform: rotate(235deg);
