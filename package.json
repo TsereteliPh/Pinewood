@@ -1,21 +1,21 @@
 {
-  "name": "summary",
+  "name": "pinewood",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://TsereteliPh.github.io/Summary",
+  "homepage": "https://TsereteliPh.github.io/Pinewood",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TsereteliPh/Pink.git"
+    "url": "git+https://github.com/TsereteliPh/Pinewood.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TsereteliPh/Pink/issues"
+    "url": "https://github.com/TsereteliPh/Pinewood/issues"
   },
   "devDependencies": {
     "del": "^6.1.1",
