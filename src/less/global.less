@@ -59,6 +59,7 @@ img {
 
 .container {
     max-width: 1740px;
+    margin: 0 auto;
     padding: 0 17px;
 
     @media (min-width: @tablet-width) {
@@ -70,7 +71,6 @@ img {
     }
 
     @media (min-width: @desktop-width) {
-        margin: 0 auto;
         padding: 0;
     }
 }
@@ -192,7 +192,7 @@ img {
     text-align: center;
     color: #686656;
 
-    background-color: none;
+    background-color: transparent;
     border: 2px solid #8B9D83;
     border-radius: 55px;
     cursor: pointer;
@@ -208,6 +208,24 @@ img {
     &:disabled {
         border-color: #dcdcdc;
         cursor: default;
+    }
+
+    &--arrow {
+        position: relative;
+
+        padding-left: 35px;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: calc(50% - 7.5px);
+            left: 18px;
+            width: 17px;
+            height: 15px;
+
+            background: url('../img/icon-arrow-left.svg') no-repeat 50%;
+        }
     }
 }
 
@@ -226,6 +244,10 @@ img {
     &:hover,
     &:focus {
         border-color: #6D8E5E;
+    }
+
+    &:focus:invalid {
+        border-color: #CF0909;
     }
 
     &:focus-visible {

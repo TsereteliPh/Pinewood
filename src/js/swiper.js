@@ -34,7 +34,7 @@ const servicesSwiper = new Swiper('.services__wrapper', {
         nextEl: '.services__right-btn',
         prevEl: '.services__left-btn',
     },
-    loop: true,
+    loop: false,
     slidesPerView: 'auto',
     breakpoints: {
         320: {

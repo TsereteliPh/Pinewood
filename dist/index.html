@@ -194,37 +194,37 @@
                         <img src="img/content-grinding.jpg" alt="Фотография услуги Шлифовка">
                         <h3 class="services__caption">Шлифовка</h3>
                         <p class="services__text">Подготовка дома к покраске и увеличение срока службы каркаса</p>
-                        <button class="primary-button primary-button--arrow services__button">Оставить заявку</button>
+                        <button class="primary-button primary-button--arrow services__button js-modal-open">Оставить заявку</button>
                     </li>
                     <li class="services__item swiper-slide">
                         <img src="img/content-grinding.jpg" alt="Фотография услуги Шлифовка">
                         <h3 class="services__caption">Шлифовка</h3>
                         <p class="services__text">Подготовка дома к покраске и увеличение срока службы каркаса</p>
-                        <button class="primary-button primary-button--arrow services__button">Оставить заявку</button>
+                        <button class="primary-button primary-button--arrow services__button js-modal-open">Оставить заявку</button>
                     </li>
                     <li class="services__item swiper-slide">
                         <img src="img/content-grinding.jpg" alt="Фотография услуги Шлифовка">
                         <h3 class="services__caption">Шлифовка</h3>
                         <p class="services__text">Подготовка дома к покраске и увеличение срока службы каркаса</p>
-                        <button class="primary-button primary-button--arrow services__button">Оставить заявку</button>
+                        <button class="primary-button primary-button--arrow services__button js-modal-open">Оставить заявку</button>
                     </li>
                     <li class="services__item swiper-slide">
                         <img src="img/content-grinding.jpg" alt="Фотография услуги Шлифовка">
                         <h3 class="services__caption">Шлифовка</h3>
                         <p class="services__text">Подготовка дома к покраске и увеличение срока службы каркаса</p>
-                        <button class="primary-button primary-button--arrow services__button">Оставить заявку</button>
+                        <button class="primary-button primary-button--arrow services__button js-modal-open">Оставить заявку</button>
                     </li>
                     <li class="services__item swiper-slide">
                         <img src="img/content-grinding.jpg" alt="Фотография услуги Шлифовка">
                         <h3 class="services__caption">Шлифовка</h3>
                         <p class="services__text">Подготовка дома к покраске и увеличение срока службы каркаса</p>
-                        <button class="primary-button primary-button--arrow services__button">Оставить заявку</button>
+                        <button class="primary-button primary-button--arrow services__button js-modal-open">Оставить заявку</button>
                     </li>
                     <li class="services__item swiper-slide">
                         <img src="img/content-grinding.jpg" alt="Фотография услуги Шлифовка">
                         <h3 class="services__caption">Шлифовка</h3>
                         <p class="services__text">Подготовка дома к покраске и увеличение срока службы каркаса</p>
-                        <button class="primary-button primary-button--arrow services__button">Оставить заявку</button>
+                        <button class="primary-button primary-button--arrow services__button js-modal-open">Оставить заявку</button>
                     </li>
                 </ul>
 
@@ -236,7 +236,7 @@
             </div>
         </section>
 
-        <section class="quiz">
+        <section class="container quiz">
             <div class="foreword quiz__foreword">
                 <h2 class="main__caption">
                     Ответьте на <span>5 простых вопросов</span><br>
@@ -245,13 +245,265 @@
             </div>
 
             <div class="quiz__wrapper">
+                <form action="#" class="quiz__form form">
+                    <div class="form__body">
+                        <div class="form__first area js-quiz-question js-quiz-active">
+                            <p class="form__question">Вопрос 1/5</p>
 
+                            <h3 class="form__caption">Укажите площадь дома:</h3>
+
+                            <div class="area__wrapper">
+                                <input type="number" min="0" name="area" class="input area__input" placeholder="≈ 250 *" required>
+                            </div>
+
+                            <img class="area__img" src="img/quiz-house.png" alt="Чертеж планировки дома">
+                        </div>
+
+                        <div class="form__second js-quiz-question">
+                            <p class="form__question">Вопрос 2/5</p>
+
+                            <h3 class="form__caption">Укажите материал дома:</h3>
+
+                            <div class="form__check-list check-list">
+                                <div class="check-list__wrapper">
+                                    <label>
+                                        <input class="check-list__input" type="checkbox" name="glued-beam">
+                                        <span class="check-list__checkbox check-list__checkbox--glued-beam"></span>
+                                        Клееный брус
+                                    </label>
+                                </div>
+                                
+                                <div class="check-list__wrapper">
+                                    <label>
+                                        <input class="check-list__input" type="checkbox" name="prof-timber">
+                                        <span class="check-list__checkbox check-list__checkbox--prof-timber"></span>
+                                        Профилированный брус
+                                    </label>
+                                </div>
+                                
+                                <div class="check-list__wrapper">
+                                    <label>
+                                        <input class="check-list__input" type="checkbox" name="galv-log">
+                                        <span class="check-list__checkbox check-list__checkbox--galv-log"></span>
+                                        Оцинкованное бревно
+                                    </label>
+                                </div>
+                                
+                                <div class="check-list__wrapper">
+                                    <label>
+                                        <input class="check-list__input" type="checkbox" name="carriage">
+                                        <span class="check-list__checkbox check-list__checkbox--carriage"></span>
+                                        Лафет
+                                    </label>
+                                </div>
+                                
+                                <div class="check-list__wrapper">
+                                    <label>
+                                        <input class="check-list__input" type="checkbox" name="chop-log">
+                                        <span class="check-list__checkbox check-list__checkbox--chop-log"></span>
+                                        Рубленное бревно
+                                    </label>
+                                </div>
+
+                                <div class="check-list__wrapper">
+                                    <input class="input check-list__text-input" type="text" name="check-list-custom" placeholder="Свой вариант">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__third js-quiz-question">
+                            <p class="form__question">Вопрос 3/5</p>
+
+                            <h3 class="form__caption">Есть ли у Вас смета на внутреннюю отделку?</h3>
+
+                            <div class="form__estimate estimate">
+                                <label class="estimate__label">
+                                    <input type="radio" name="estimate" class="form__checkbox-input" checked>
+                                    <span class="form__checkbox"></span>
+                                    Да, смета есть
+                                </label>
+
+                                <label class="estimate__label">
+                                    <input type="radio" name="estimate" class="form__checkbox-input">
+                                    <span class="form__checkbox"></span>
+                                    У меня нет сметы
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form__fourth js-quiz-question">
+                            <p class="form__question">Вопрос 4/5</p>
+
+                            <h3 class="form__caption">Когда планируете начать работы по внутренней отделке?</h3>
+
+                            <div class="form__date date">
+                                <label class="date__label">
+                                    <input type="radio" name="date" class="form__checkbox-input" checked>
+                                    <span class="form__checkbox"></span>
+                                    Как можно быстрее
+                                </label>
+
+                                <label class="date__label">
+                                    <input type="radio" name="date" class="form__checkbox-input">
+                                    <span class="form__checkbox"></span>
+                                    В течении этого года
+                                </label>
+
+                                <label class="date__label">
+                                    <input type="radio" name="date" class="form__checkbox-input">
+                                    <span class="form__checkbox"></span>
+                                    В течении месяца
+                                </label>
+
+                                <label class="date__label">
+                                    <input type="radio" name="date" class="form__checkbox-input">
+                                    <span class="form__checkbox"></span>
+                                    Пока нет точного плана
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form__fifth js-quiz-question">
+                            <p class="form__question">Вопрос 5/5</p>
+
+                            <h3 class="form__caption">Какие конкретно работы понадобятся при внутренней отделке?</h3>
+
+                            <div class="form__all-work all-work">
+                                <label class="all-work__label">
+                                    <input type="checkbox" class="form__checkbox-input" checked>
+                                    <span class="form__checkbox"></span>
+                                    Шлифовка и покраска
+                                </label>
+
+                                <label class="all-work__label">
+                                    <input type="checkbox" class="form__checkbox-input">
+                                    <span class="form__checkbox"></span>
+                                    Плиточные работы
+                                </label>
+
+                                <label class="all-work__label">
+                                    <input type="checkbox" class="form__checkbox-input">
+                                    <span class="form__checkbox"></span>
+                                    Отделка и устройство потолков, пола и стен
+                                </label>
+
+                                <label class="all-work__label">
+                                    <input type="checkbox" class="form__checkbox-input">
+                                    <span class="form__checkbox"></span>
+                                    Установка дверей и окон
+                                </label>
+
+                                <label class="all-work__label">
+                                    <input type="checkbox" class="form__checkbox-input">
+                                    <span class="form__checkbox"></span>
+                                    Прокладка инженерных систем
+                                </label> 
+
+                                <label class="all-work__label">
+                                    <input type="checkbox" class="form__checkbox-input">
+                                    <span class="form__checkbox"></span>
+                                    Сантехнические услуги
+                                </label>
+
+                                <label class="all-work__label">
+                                    <input type="checkbox" class="form__checkbox-input">
+                                    <span class="form__checkbox"></span>
+                                    Все работы «под ключ»
+                                </label>
+
+                                <div class="all-work__label">
+                                    <input class="input all-work__input" type="text" name="all-work-custom" placeholder="Свой вариант">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__last js-quiz-question">
+                            <p class="form__question">Остался последний шаг</p>
+
+                            <h3 class="form__caption">Получите оптимизацию сметы и точный план всех работ</h3>
+
+                            <div class="form__contacts contacts">
+                                <input type="tel" name="phone" class="input contacts__input js-phone-input" placeholder="Ваш телефон *" pattern="\D[0-9]{11,}" required>
+
+                                <input type="email" name="email" class="input contacts__input" placeholder="Ваша почта *" required>
+
+                                <button class="primary-button primary-button--arrow form__submit-btn" type="button">Получить расчет</button>
+
+                                <p class="form__invalid">Заполните обязательные поля отмеченные ✱, в указанном формате</p>
+                            </div>
+                        </div>
+
+                        <div class="form__thanks js-quiz-success">
+                            <p class="form__question">Остался последний шаг</p>
+
+                            <h3 class="form__caption">Спасибо!</h3>
+
+                            <p class="form__menager">
+                                Наш менеджер свяжется с вами<br>
+                                в течении 15 минут
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="form__panel">
+                        <button class="form__back-btn" type="button">
+                            <img src="img/icon-arrow-left.svg" alt="Стрелка влево">
+                            <span>Назад</span>
+                        </button>
+
+                        <button class="form__next-btn" type="button">
+                            <span>Далее</span>
+                            <img src="img/icon-arrow-right.svg" alt="Стрелка вправо">
+                        </button>
+
+                        <button class="secondary-button secondary-button--arrow form__reset-btn" type="reset">Начать сначала</button>
+                    </div>
+                </form>
+
+                <div class="quiz__assistant assist">
+                    <div class="assist__wrapper">
+                        <div class="assist__person">
+                            <img class="assist__img" src="img/quiz-avatar.jpg" alt="Фотография инженера проектов - Ивана">
+
+                            <h3 class="assist__name">Иванов Борис</h3>
+
+                            <p class="assist__job">Инженер проектов</p>
+                        </div>
+
+                        <p class="assist__text">Здравствуйте, меня зовут Борис, и я помогу Вам понять, какой бюджет нужен для отделки вашего дома под ключ</p>
+
+                        <h3 class="assist__caption">
+                            Ответив на вопросы,<br>
+                            Вы получите:
+                        </h3>
+
+                        <div class="assist__bonus bonus">
+                            <div class="bonus__wrapper">
+                                <span class="bonus__icon bonus__icon--price"></span>
+
+                                <p class="bonus__text">Ориентировочную стоимость</p>
+                            </div>
+
+                            <div class="bonus__wrapper">
+                                <span class="bonus__icon bonus__icon--comp"></span>
+
+                                <p class="bonus__text">Точную подборку проектов, исходя из ваших ответов, либо предложим новый вариант</p>
+                            </div>
+
+                            <div class="bonus__wrapper">
+                                <span class="bonus__icon bonus__icon--gift"></span>
+
+                                <p class="bonus__text">Один из 3-х подарков при заказе отделки у нас</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer__wrapper">
+        <div class="container footer__wrapper">
             <div class="footer__logo-container">
                 <a href="index.html" class="footer__link">
                     <img src="img/logo-main.svg" alt="Логотип сайта Pinewood">
@@ -286,33 +538,33 @@
                 <a href="" class="footer__adress">
                     Владимирская обл.<br> 
                     г. Александров<br>
-                    ул. Ленина 13/7 БЦ Свечка,<br>
-                    оф. 211
+                    ул. Ленина 13/7 БЦ<br>
+                    Свечка, оф. 211
                 </a>
             </div>
         </div>
     </footer>
 
     <section class="modal modal--call">
-        <h2 class="modal__caption">
-            Мы перезвоним Вам<br>
-            в течении 15 минут
-        </h2>
+        <div class="modal__wrapper">
+            <h2 class="modal__caption">
+                Мы перезвоним Вам<br>
+                в течении 15 минут
+            </h2>
 
-        <form action="#" class="modal__form">
-            <input type="text" class="input modal__input" name="modal-name" placeholder="Ваше имя" required>
+            <form action="#" class="modal__form">
+                <input type="text" class="input modal__input" name="modal-name" placeholder="Ваше имя" required>
 
-            <input type="tel" class="input modal__input" name="modal-phone" placeholder="Ваш телефон" required>
+                <input type="tel" class="input modal__input js-phone-input" name="modal-phone" placeholder="Ваш телефон" pattern="\D[0-9]{11,}" required>
 
-            <button class="primary-button modal__button">Заказать звонок</button>
-        </form>
+                <button class="primary-button primary-button--arrow modal__button">Заказать звонок</button>
+            </form>
 
-        <button class="modal__cross">
-            <span class="visually-hidden">Закрыть окно</span>
-            <svg>
-                <use xlink:href="img/icons.svg#icon-cross"></use>
-            </svg>
-        </button>
+            <button class="modal__cross js-modal-close">
+                <span class="visually-hidden">Закрыть окно</span>
+                <svg viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg"><path d="M2 2l22 22m0-22L2 24" stroke="#424242" stroke-width="4" stroke-linecap="round"/></svg>
+            </button>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
