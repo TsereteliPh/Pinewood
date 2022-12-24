@@ -1,8 +1,8 @@
 .quiz {
     position: relative;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     
-    overflow-x: hidden;
+    overflow: hidden;
 
     &::before {
         content: "";
@@ -22,11 +22,11 @@
     }
 
     @media (min-width: @tablet-width) {
-        margin-bottom: 105px;
+        padding-bottom: 105px;
 
         &::before {
-            top: 77%;
-            left: -5%;
+            top: 70%;
+            left: -10%;
 
             width: 474px;
             height: 456px;
@@ -38,7 +38,7 @@
             content: "";
 
             position: absolute;
-            top: 4%;
+            top: 3%;
             right: -3%;
 
             width: 340px;
@@ -53,11 +53,11 @@
     }
 
     @media (min-width: @laptop-width) {
-        margin-bottom: 155px;
+        padding-bottom: 155px;
 
         &::before {
-            top: 68%;
-            left: 0;
+            top: 58%;
+            left: -3%;
 
             width: 452px;
             height: 426px;
@@ -66,7 +66,7 @@
         }
 
         &::after {
-            top: 18%;
+            top: 13%;
 
             width: 326px;
             height: 307px;
@@ -76,21 +76,21 @@
     }
 
     @media (min-width: @desktop-width) {
-        margin-bottom: 115px;
+        padding-bottom: 115px;
 
         &::before {
-            top: 80%;
-            left: 8%;
+            top: 73%;
+            left: 6%;
 
             width: 356px;
             height: 341px;
 
-            transform: rotate(-70deg);
+            transform: rotate(-45deg);
         }
 
         &::after {
-            top: 8%;
-            right: -10%;
+            top: 2%;
+            right: 0;
 
             width: 481px;
             height: 453px;
