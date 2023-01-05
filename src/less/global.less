@@ -26,10 +26,6 @@ ul, ol, dl {
     list-style: none;
 }
 
-img {
-    max-width: 100%;
-}
-
 .page__body {
     max-width: 100%;
     min-width: 320px;
@@ -42,6 +38,36 @@ img {
 
     background-color: #EDE8E2;
     overflow-x: hidden;
+}
+
+.page__caption {
+    margin-top: 40px;
+    margin-bottom: 25px;
+
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: @laptop-width) {
+        margin-top: 100px;
+        margin-bottom: 40px;
+
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    @media (min-width: @desktop-width) {
+        margin-top: 60px;
+        margin-bottom: 50px;
+
+        font-size: 48px;
+        line-height: 56px;
+    }
 }
 
 .visually-hidden {
@@ -252,5 +278,19 @@ img {
 
     &:focus-visible {
         outline: none;
+    }
+}
+
+.download-button {
+    width: 230px;
+    height: 50px;
+    margin: 0 auto;
+
+    border-radius: 78px;
+
+    @media (min-width: @desktop-width) {
+        height: 60px;
+
+        font-size: 18px;
     }
 }

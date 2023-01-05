@@ -66,7 +66,10 @@ function imageCompress() {
         imagemin.mozjpeg({quality: 90}),
         imagemin.optipng({optimizationLevel: 4}),
         imagemin.svgo({
-            plugins: [{removeViewBox: false}]
+            plugins: [{
+                removeViewBox: false,
+                //removeDimensions: true
+            }]
         })
     ]))
     .pipe(gulp.dest(paths.img.dest))

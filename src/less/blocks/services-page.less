@@ -1,4 +1,4 @@
-.projects-page {
+.services-page {
     margin-bottom: 80px;
 
     @media (min-width: @tablet-width) {
@@ -10,32 +10,35 @@
     }
 }
 
-.projects-page__list {
+.services-page__list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 40px;
 
-    & .projects__item {
-        margin: 0 auto;
+    & .services__item {   
+        max-width: 340px;
     }
 
     @media (min-width: @tablet-width) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 40px;
-        row-gap: 30px;
+        column-gap: 75px;
+        row-gap: 50px;
 
-        & .projects__item {
-            margin: 0;
+        & .services__item {   
+            max-width: 269px;
         }
     }
 
     @media (min-width: @laptop-width) {
-        gap: 40px;
+        gap: 30px;
     }
 
     @media (min-width: @desktop-width) {
         column-gap: 60px;
+        row-gap: 50px;
+
+        & .services__item {
+            max-width: 320px;
+        }
     }
 }

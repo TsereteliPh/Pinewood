@@ -1,10 +1,19 @@
-// import Swiper from 'swiper';
-
 document.addEventListener('DOMContentLoaded', () => {
     if (window.innerWidth < 744){
         const processSlider = new Swiper('.process__wrapper', {
             scrollbar: {
                 el: '.process__scrollbar',
+                draggable: true,
+            },
+            spaceBetween: 20  
+        });
+
+        const teamSwiper = new Swiper('.team__wrapper', {
+            loop: false,
+            slidesPerView: 'auto',
+            slidesPerScroll: 1,
+            scrollbar: {
+                el: '.team__scrollbar',
                 draggable: true,
             },
             spaceBetween: 20  
@@ -38,9 +47,6 @@ const servicesSwiper = new Swiper('.services__wrapper', {
     slidesPerView: 'auto',
     breakpoints: {
         320: {
-            spaceBetween: 75
-        },
-        1400: {
             spaceBetween: 30
         },
         1920: {
@@ -48,4 +54,3 @@ const servicesSwiper = new Swiper('.services__wrapper', {
         }
     }
 })
-
